@@ -8,7 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 $negro: black;
-$marrontransparente: rgba(0, 0, 0, 0.2);
+$marrontransparente: rgba(0, 0, 0, 0.8);
 $marronclaro: rgb(175, 123, 73) ;
 $marronoscuro: rgb(119, 73, 29) ;
 $blanco: white;
@@ -111,7 +111,7 @@ mark{
 
     .textoContenedor{
         font-family: 'Lora', serif;
-        font-size: 2.8vh;
+        font-size: 2.5vh;
         color: $marronclaro;
         color: $blanco;
         margin-right: 30px;
