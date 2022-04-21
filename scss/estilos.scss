@@ -15,6 +15,7 @@ $blanco: white;
 $transparente: rgb(0,0,0,0);
 $beige: rgba(68, 53, 17, 0.8);
 $beigereal: rgba(212, 203, 114, 0.5);
+$marronLocal: rgb(252, 214, 132) ;
 
 
 a{
@@ -47,8 +48,12 @@ mark{
     height: 100%;
     background-attachment: fixed;
     overflow: scroll;
+    overflow: hidden;
 }
 
+.filtro{
+    filter: sepia(25%);
+}
 
 
 // fin generales
@@ -57,7 +62,7 @@ mark{
 
 // celu
 
-@media only screen and (max-width: 993px) {
+@media only screen and (max-width: 991px) {
     // generales
     .espacioArriba{
         margin-top: 5vh;
@@ -77,6 +82,10 @@ mark{
     
     .espacioGrandeArriba{
         margin-top: 20vh;
+    }
+
+    .paddingTopArriba{
+        padding-top: 2vh;
     }
 
     .top{
@@ -112,7 +121,6 @@ mark{
     .textoContenedor{
         font-family: 'Lora', serif;
         font-size: 2.5vh;
-        color: $marronclaro;
         color: $blanco;
         margin-right: 30px;
         margin-left: 30px;
@@ -155,8 +163,235 @@ mark{
 }
 
 
+.navbar{
+    border-bottom: $marronclaro solid 1px;
+
+    font-size: 20px;
+    color: $blanco;
+    text-transform: uppercase;
+}
+
+// fin navbar
 
 
+// footer
+
+footer{
+    width: 100%;
+    background-color: $marrontransparente;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    border-top:  solid 1px;
+    padding-top: 1vh;
+
+}
+
+.textoFooter{
+
+    margin-bottom: 0px;
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    color: $blanco;
+    text-transform: uppercase;
+}
+
+// fin footer
+
+    // home.html
+
+    .contenedorUnoHome{
+        margin-left: 10%;
+        background-color: $beige;
+        width: 80%;
+        border-radius: 3%;
+        padding-bottom: 5vh;
+    }
+
+    .imagenHome{
+        width: 100%;
+        border-radius: 5%;
+    }
+
+    .contenedorImagenHome{
+        display: flex;
+        justify-content: center;
+        margin-left: 15%;
+        width: 70%;
+  
+  
+    }
+
+    // finhome.html
+
+
+    // productos.html
+
+    .imagenCafesProductos{
+        width: 90%;
+        border-radius: 5%;
+    }
+
+    .contenedorCafesProductos{
+        display: flex;
+        justify-content: center;
+        margin-left: 15%;
+        width: 70%;
+    }
+
+        .contenedorProductos{
+        margin-left: 10%;
+        background-color: $beige;
+        width: 80%;
+        border-radius: 3%;
+        padding-bottom: 5vh;
+    }
+
+    // fin productos.html
+
+
+    // lococal.html
+
+
+    .contenedorLocal{
+        margin-left: 10%;
+        background-color: $marronLocal;
+        width: 80%;
+        border-radius: 3%;
+        padding-bottom: 5vh;
+    }
+
+    .textoLocal{
+    padding-top: 3vh;
+    font-family: 'Lora', serif;
+    font-size: 2.5vh;
+    color: $negro;
+    margin-right: 30px;
+    margin-left: 30px;
+    }
+
+    // fin local.html
+
+
+// nosotros.html
+
+.contenedorNosotros{
+    margin-left: 10%;
+    background-color: $beige;
+    width: 80%;
+    border-radius: 3%;
+    padding-bottom: 5vh;
+}
+
+// fin nosotros.html
+
+}
+
+
+
+// ----------------------fin cel
+
+
+// PC
+@media only screen and (min-width: 992px) {
+
+    // generales
+    .espacioArriba{
+        margin-top: 8vh;
+    }
+    .masEspacioArriba{
+        margin-top: 12vh;
+    }
+    .espacioAbajo{
+        margin-bottom: 8vh;
+    }
+    .masEspacioAbajo{
+        margin-bottom: 16vh;
+    }
+    .espacioAbajoHome{
+        margin-bottom: 10vh;
+    }
+    
+    .espacioGrandeArriba{
+        margin-top: 30vh;
+    }
+
+    .paddingTopArriba{
+        padding-top: 4vh;
+    }
+
+    .top{
+        background-color:rgb(119, 73, 29, 0.2) ;
+        width: 100%;
+ 
+    }
+
+    h1{
+        text-transform: uppercase;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 12vh;
+        color: $marronclaro;
+        font-weight: bolder;
+
+    }
+
+    h2{
+        text-transform: uppercase;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 5vh;
+        color: $blanco;
+    }
+
+    .tituloContenedor{
+        text-transform: uppercase;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 8vh;
+        color: $marronclaro;
+        font-weight: bolder;
+    }
+
+    .textoContenedor{
+        font-family: 'Lora', serif;
+        font-size: 3vh;
+        color: $blanco;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .navbar-brand{
+        text-transform: uppercase;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 4vh;
+        color: $marronclaro;
+        letter-spacing: 0.5rem;
+    }
+
+    .nav-link{
+        text-transform: uppercase;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 4vh;
+        color: $marronclaro;
+    }
+
+
+    // fin generales
+
+// navbar
+.navbar-dark{
+    background-color:$marrontransparente !important;
+
+    text-transform: uppercase;
+  
+    .navbar-collapse{
+        justify-content: end !important;
+      
+
+    }
+    .nav-link{
+        display: flex;
+        justify-content: end;
+        color: white !important;
+    }
+}
 
 
 .navbar{
@@ -178,32 +413,34 @@ footer{
     margin-bottom: 0px;
     margin-top: 30px;
     border-top:  solid 1px;
+    padding-top: 1vh;
+
 }
 
 .textoFooter{
 
     margin-bottom: 0px;
-    font-family: 'Akshar', sans-serif;
-    font-size: 15px;
+    font-family: 'Lora', serif;
+    font-size: 20px;
     color: $blanco;
+    text-transform: uppercase;
 }
 
 // fin footer
 
     // home.html
 
-    .primeraHome{
-        margin-left: 10%;
+    .contenedorUnoHome{
+        margin-left: 25%;
         background-color: $beige;
-        width: 80%;
+        width: 50%;
         border-radius: 3%;
         padding-bottom: 5vh;
     }
 
     .imagenHome{
-        width: 40vh;
+        width: 60%;
         border-radius: 5%;
-
     }
 
     .contenedorImagenHome{
@@ -216,14 +453,72 @@ footer{
     }
 
     // finhome.html
+
+
+    // productos.html
+
+    .imagenCafesProductos{
+        width: 70%;
+        border-radius: 5%;
+    }
+
+    .contenedorCafesProductos{
+        display: flex;
+        justify-content: center;
+        margin-left: 10%;
+        width: 50%;
+    }
+
+        .contenedorProductos{
+            margin-left: 35%;
+            background-color: $beige;
+            width: 50%;
+            border-radius: 3%;
+            padding-bottom: 2vh;
+    }
+
+
+
+    // fin productos.html
+
+
+    // lococal.html
+
+
+    .contenedorLocal{
+        margin-left: 25%;
+        background-color: $marronLocal;
+        width: 50%;
+        border-radius: 3%;
+        padding-bottom: 5vh;
+    }
+
+    .textoLocal{
+    padding-top: 3vh;
+    font-family: 'Lora', serif;
+    font-size: 3.5vh;
+    color: $negro;
+    margin-right: 30px;
+    margin-left: 30px;
+    }
+
+    // fin local.html
+
+
+// nosotros.html
+
+.contenedorNosotros{
+    margin-left: 25%;
+    background-color: $beige;
+    width: 50%;
+    border-radius: 3%;
+    padding-bottom: 5vh;
 }
 
+// fin nosotros.html
 
-// fin cel
 
-
-// PC
-
+}
 
 
 

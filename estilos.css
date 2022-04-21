@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Akshar:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +20,7 @@ button:visited {
 }
 
 mark {
-  background-color: rgb(161, 106, 55);
+  background-color: rgb(175, 123, 73);
   color: white;
 }
 
@@ -32,7 +34,6 @@ mark {
   background-size: cover;
   width: 100%;
   height: 100%;
-  filter: contrast(150%);
   background-attachment: fixed;
   overflow: scroll;
 }
@@ -59,17 +60,64 @@ mark {
   }
 
   .espacioGrandeArriba {
-    margin-top: 28vh;
+    margin-top: 20vh;
+  }
+
+  .top {
+    background-color: rgba(119, 73, 29, 0.2);
+    width: 100%;
   }
 
   h1 {
     text-transform: uppercase;
+    font-family: "Bebas Neue", cursive;
+    font-size: 8vh;
+    color: rgb(175, 123, 73);
+    font-weight: bolder;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 3vh;
+    color: white;
+  }
+
+  .tituloContenedor {
+    text-transform: uppercase;
+    font-family: "Bebas Neue", cursive;
+    font-size: 5vh;
+    color: rgb(175, 123, 73);
+    font-weight: bolder;
+  }
+
+  .textoContenedor {
+    font-family: "Lora", serif;
+    font-size: 2.5vh;
+    color: rgb(175, 123, 73);
+    color: white;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .navbar-brand {
+    text-transform: uppercase;
+    font-family: "Bebas Neue", cursive;
+    font-size: 4vh;
+    color: rgb(175, 123, 73);
+    letter-spacing: 0.5rem;
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+    font-family: "Bebas Neue", cursive;
+    font-size: 4vh;
+    color: rgb(175, 123, 73);
   }
 
   .navbar-dark {
-    background-color: rgba(55, 50, 71, 0.8) !important;
+    background-color: rgba(0, 0, 0, 0.8) !important;
     text-transform: uppercase;
-    position: sticky;
   }
   .navbar-dark .navbar-collapse {
     justify-content: end !important;
@@ -81,8 +129,7 @@ mark {
   }
 
   .navbar {
-    border-bottom: rgb(161, 106, 55) solid 1px;
-    font-family: "Akshar", sans-serif;
+    border-bottom: rgb(175, 123, 73) solid 1px;
     font-size: 20px;
     color: white;
     text-transform: uppercase;
@@ -90,7 +137,7 @@ mark {
 
   footer {
     width: 100%;
-    background-color: rgba(55, 50, 71, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     margin-bottom: 0px;
     margin-top: 30px;
     border-top: solid 1px;
@@ -103,11 +150,24 @@ mark {
     color: white;
   }
 
-  .primerHome {
-    background-color: rgba(24, 241, 241, 0.5);
-    width: 70%;
+  .primeraHome {
+    margin-left: 10%;
+    background-color: rgba(68, 53, 17, 0.8);
+    width: 80%;
+    border-radius: 3%;
+    padding-bottom: 5vh;
+  }
+
+  .imagenHome {
+    width: 40vh;
+    border-radius: 5%;
+  }
+
+  .contenedorImagenHome {
+    display: flex;
+    justify-content: center;
     margin-left: 15%;
-    height: 1500px;
+    width: 70%;
   }
 }
 

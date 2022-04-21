@@ -36,9 +36,14 @@ mark {
   height: 100%;
   background-attachment: fixed;
   overflow: scroll;
+  overflow: hidden;
 }
 
-@media only screen and (max-width: 993px) {
+.filtro {
+  filter: sepia(25%);
+}
+
+@media only screen and (max-width: 991px) {
   .espacioArriba {
     margin-top: 5vh;
   }
@@ -61,6 +66,10 @@ mark {
 
   .espacioGrandeArriba {
     margin-top: 20vh;
+  }
+
+  .paddingTopArriba {
+    padding-top: 2vh;
   }
 
   .top {
@@ -94,7 +103,6 @@ mark {
   .textoContenedor {
     font-family: "Lora", serif;
     font-size: 2.5vh;
-    color: rgb(175, 123, 73);
     color: white;
     margin-right: 30px;
     margin-left: 30px;
@@ -141,16 +149,18 @@ mark {
     margin-bottom: 0px;
     margin-top: 30px;
     border-top: solid 1px;
+    padding-top: 1vh;
   }
 
   .textoFooter {
     margin-bottom: 0px;
-    font-family: "Akshar", sans-serif;
+    font-family: "Lora", serif;
     font-size: 15px;
     color: white;
+    text-transform: uppercase;
   }
 
-  .primeraHome {
+  .contenedorUnoHome {
     margin-left: 10%;
     background-color: rgba(68, 53, 17, 0.8);
     width: 80%;
@@ -159,7 +169,7 @@ mark {
   }
 
   .imagenHome {
-    width: 40vh;
+    width: 100%;
     border-radius: 5%;
   }
 
@@ -168,6 +178,233 @@ mark {
     justify-content: center;
     margin-left: 15%;
     width: 70%;
+  }
+
+  .imagenCafesProductos {
+    width: 90%;
+    border-radius: 5%;
+  }
+
+  .contenedorCafesProductos {
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+    width: 70%;
+  }
+
+  .contenedorProductos {
+    margin-left: 10%;
+    background-color: rgba(68, 53, 17, 0.8);
+    width: 80%;
+    border-radius: 3%;
+    padding-bottom: 5vh;
+  }
+
+  .contenedorLocal {
+    margin-left: 10%;
+    background-color: rgb(252, 214, 132);
+    width: 80%;
+    border-radius: 3%;
+    padding-bottom: 5vh;
+  }
+
+  .textoLocal {
+    padding-top: 3vh;
+    font-family: "Lora", serif;
+    font-size: 2.5vh;
+    color: black;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .contenedorNosotros {
+    margin-left: 10%;
+    background-color: rgba(68, 53, 17, 0.8);
+    width: 80%;
+    border-radius: 3%;
+    padding-bottom: 5vh;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .espacioArriba {
+    margin-top: 8vh;
+  }
+
+  .masEspacioArriba {
+    margin-top: 12vh;
+  }
+
+  .espacioAbajo {
+    margin-bottom: 8vh;
+  }
+
+  .masEspacioAbajo {
+    margin-bottom: 16vh;
+  }
+
+  .espacioAbajoHome {
+    margin-bottom: 10vh;
+  }
+
+  .espacioGrandeArriba {
+    margin-top: 30vh;
+  }
+
+  .paddingTopArriba {
+    padding-top: 4vh;
+  }
+
+  .top {
+    background-color: rgba(119, 73, 29, 0.2);
+    width: 100%;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-family: "Bebas Neue", cursive;
+    font-size: 12vh;
+    color: rgb(175, 123, 73);
+    font-weight: bolder;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 5vh;
+    color: white;
+  }
+
+  .tituloContenedor {
+    text-transform: uppercase;
+    font-family: "Bebas Neue", cursive;
+    font-size: 8vh;
+    color: rgb(175, 123, 73);
+    font-weight: bolder;
+  }
+
+  .textoContenedor {
+    font-family: "Lora", serif;
+    font-size: 3vh;
+    color: white;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .navbar-brand {
+    text-transform: uppercase;
+    font-family: "Bebas Neue", cursive;
+    font-size: 4vh;
+    color: rgb(175, 123, 73);
+    letter-spacing: 0.5rem;
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+    font-family: "Bebas Neue", cursive;
+    font-size: 4vh;
+    color: rgb(175, 123, 73);
+  }
+
+  .navbar-dark {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    text-transform: uppercase;
+  }
+  .navbar-dark .navbar-collapse {
+    justify-content: end !important;
+  }
+  .navbar-dark .nav-link {
+    display: flex;
+    justify-content: end;
+    color: white !important;
+  }
+
+  .navbar {
+    border-bottom: rgb(175, 123, 73) solid 1px;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 0px;
+    margin-top: 30px;
+    border-top: solid 1px;
+    padding-top: 1vh;
+  }
+
+  .textoFooter {
+    margin-bottom: 0px;
+    font-family: "Lora", serif;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  .contenedorUnoHome {
+    margin-left: 25%;
+    background-color: rgba(68, 53, 17, 0.8);
+    width: 50%;
+    border-radius: 3%;
+    padding-bottom: 5vh;
+  }
+
+  .imagenHome {
+    width: 60%;
+    border-radius: 5%;
+  }
+
+  .contenedorImagenHome {
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+    width: 70%;
+  }
+
+  .imagenCafesProductos {
+    width: 70%;
+    border-radius: 5%;
+  }
+
+  .contenedorCafesProductos {
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    width: 50%;
+  }
+
+  .contenedorProductos {
+    margin-left: 35%;
+    background-color: rgba(68, 53, 17, 0.8);
+    width: 50%;
+    border-radius: 3%;
+    padding-bottom: 2vh;
+  }
+
+  .contenedorLocal {
+    margin-left: 25%;
+    background-color: rgb(252, 214, 132);
+    width: 50%;
+    border-radius: 3%;
+    padding-bottom: 5vh;
+  }
+
+  .textoLocal {
+    padding-top: 3vh;
+    font-family: "Lora", serif;
+    font-size: 3.5vh;
+    color: black;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .contenedorNosotros {
+    margin-left: 25%;
+    background-color: rgba(68, 53, 17, 0.8);
+    width: 50%;
+    border-radius: 3%;
+    padding-bottom: 5vh;
   }
 }
 
